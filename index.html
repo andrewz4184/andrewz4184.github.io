@@ -1,172 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrew Zhang</title>
-  <meta name="description" content="Andrew Zhang — portfolio" />
-  <meta name="color-scheme" content="light dark">
-  <link rel="icon" type="image/jpeg" href="wgmi.jpg">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #5b6270;
-      --border: #e5e7eb;
-      --link: #1a73e8;
-      --maxw: 760px;
-      --radius: 8px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg:#0b0c10; --text:#e8e8ea; --muted:#a1a6b3; --border:#20232a; --link:#86b7ff; }
-    }
-    * { box-sizing:border-box }
-    body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6 }
-    a { color:var(--link); text-decoration:none }
-    a:hover { text-decoration:underline }
-    header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--border); }
-    .nav { max-width:var(--maxw); margin:0 auto; padding:12px 16px; display:flex; align-items:center; justify-content:space-between }
-    .nav .brand { font-weight:700 }
-    .nav ul { list-style:none; display:flex; gap:16px; margin:0; padding:0 }
-    main { max-width:var(--maxw); margin:0 auto; padding:24px 16px 56px }
-    h1, h2, h3 { line-height:1.25; margin:0 0 6px }
-    h1 { font-size: clamp(22px, 3.4vw, 32px) }
-    h2 { font-size: clamp(18px, 2.8vw, 24px); margin-top:28px }
-    h3 { font-size: 18px }
-    p { margin:0 0 10px }
-    .muted { color:var(--muted) }
-    .list { padding-left: 18px }
-    .kvs { display:flex; gap:8px; flex-wrap:wrap; font: 600 12px var(--mono); color:var(--muted) }
-    .kvs span { padding:2px 6px; border:1px solid var(--border); border-radius:999px }
-    .two-col { display:grid; gap:12px }
-    @media (min-width: 760px){ .two-col { grid-template-columns: 1fr 1fr } }
-    footer { max-width:var(--maxw); margin:0 auto; padding:24px 16px 48px; color:var(--muted); border-top:1px solid var(--border) }
-    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
-    :focus-visible { outline:2px solid #9bbcff; outline-offset:2px; border-radius:4px }
-      /* Projects */
-    .proj-grid { display:grid; gap:12px }
-    @media (min-width: 760px){ .proj-grid { grid-template-columns: 1fr 1fr } }
-    .proj { border:1px solid var(--border); border-radius: var(--radius); padding:12px }
-    .proj h3 { margin-bottom:4px }
-    .proj p { margin:0 0 8px }
-    .tags { display:flex; gap:6px; flex-wrap:wrap; font:600 12px var(--mono); color:var(--muted) }
-    .tags span { padding:2px 6px; border:1px solid var(--border); border-radius:999px }
-  </style>
-</head>
-<body>
-  <a class="sr-only" href="#content">Skip to content</a>
-  <header>
-    <nav class="nav" aria-label="Primary">
-      <div class="brand">Andrew Zhang</div>
-      <ul>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="./AndrewZhang_Resume.pdf">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="content">
-    <section id="about">
-      <h1>Software Engineer</h1>
-      <p class="muted">Mobile • AI/ML • Full‑stack</p>
-      <p>I'm currently a senior studying Computer Science at the University of Maryland, College Park. I'm intending on enrolling in Georgia 
-        Institute of Technology's OMSCS program, finishing in 2027. I'm currently open to both Intern/New Grad roles in Software Engineering.</p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <p class="muted">Previously, I've interned at USAA as a software engineering intern working on their 
-        Mobile App which servers over 14 Million members as well as their SafePilot technology, which leverages telematics data to track driving behavior and detect accidents in real time.
-        Before that, I built websites and taught kids Computer Science at CCACC Academy, an afterschool program for over 2,000 families.
-    </p>
-    </section>
-
-    <section id="technologies">
-      <h2>Technologies</h2>
-      <p class="muted">Most of my day to day work consists of Python and Kotlin.</p>
-      <p class="muted">I'm comfortable working with Java/C/C++/Swift/Go/SQL/HTML/CSS/Javascript/OCaml</p>
-      <p class="muted">I have exposure working within frameworks and libraries like Jetpack Compose/SwiftUI/AWS/Docker/Terraform/Node.JS/Django/Flask/MongoDB</p>
-    </section>
-
-    <section id="coursework">
-      <h2>Coursework</h2>
-      <ul class="list">
-        <li>Data Structures & Algorithms</li>
-        <li>Machine Learning / Data Science</li>
-        <li>Mobile App Development (Android/iOS)</li>
-        <li>Compilers</li>
-        <li>Operating Systems</li>
-        <li>Parallel & Distributed Computing</li>
-        <li>Statistics / Probability for CS</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="proj-grid">
-        <article class="proj">
-          <h3><a href="https://github.com/andrewz4184/calorie-tracker" target="_blank" rel="noreferrer noopener">Calorie Tracker</a></h3>
-          <p>Minimal mobile tracker for daily calories/macros with local persistence and fast input.</p>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>Javascript</span><span>Django</span>
-          </div>
-        </article>
-
-        <article class="proj">
-          <h3><a href="https://github.com/andrewz4184/stock-app" target="_blank" rel="noreferrer noopener">Stock App</a></h3>
-          <p>Lightweight dashboard for watchlists and sector rotation with basic fundamentals.</p>
-          <div class="tags">
-            <span>Node</span><span>Express</span><span>MongoDB</span><span>Frontend</span>
-          </div>
-        </article>
-
-        <article class="proj">
-          <h3><a href="https://github.com/andrewz4184/restock-notifier" target="_blank" rel="noreferrer noopener">Restock Notifier</a></h3>
-          <p>Monitors product pages and sends alerts on restocks (matcha/tea drops ☕).</p>
-          <div class="tags">
-            <span>Go</span><span>AWS Lambda</span><span>EventBridge</span><span>Twilio/Telegram</span>
-          </div>
-        </article>
-
-        <article class="proj">
-          <h3><a href="https://github.com/andrewz4184/rag-chatbot" target="_blank" rel="noreferrer noopener">RAG Chatbot</a></h3>
-          <p>Retrieval‑augmented assistant over domain PDFs with citations and brief export.</p>
-          <div class="tags">
-            <span>Python</span><span>FastAPI</span><span>OpenAI</span><span>Pinecone</span>
-          </div>
-        </article>
-        
-        <article class="proj">
-          <h3><a href="https://github.com/andrewz4184/aram-stat-analyzer" target="_blank" rel="noreferrer noopener">ARAM Stat Analyzer</a></h3>
-          <p>Fetches match data and surfaces champion/build win‑rates and personal performance trends.</p>
-          <div class="tags">
-            <span>Python</span><span>FastAPI</span><span>Requests</span><span>Charts</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:azhang04@terpmail.umd.edu">azhang04@terpmail.umd.edu</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/andrewz4184" target="_blank" rel="noreferrer noopener">/in/andrewz4184</a></p>
-      <p>GitHub: <a href="https://github.com/andrewz4184" target="_blank" rel="noreferrer noopener">@andrewz4184</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <small>© <span id="y"></span> Andrew Zhang</small>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -334,4 +165,171 @@
   </script>
 </body>
 </html>
->>>>>>> 9629b0e (Initial commit)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrew Zhang</title>
+  <meta name="description" content="Andrew Zhang — portfolio" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/jpeg" href="wgmi.jpg">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #5b6270;
+      --border: #e5e7eb;
+      --link: #1a73e8;
+      --maxw: 760px;
+      --radius: 8px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0c10; --text:#e8e8ea; --muted:#a1a6b3; --border:#20232a; --link:#86b7ff; }
+    }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6 }
+    a { color:var(--link); text-decoration:none }
+    a:hover { text-decoration:underline }
+    header { position:sticky; top:0; background:var(--bg); border-bottom:1px solid var(--border); }
+    .nav { max-width:var(--maxw); margin:0 auto; padding:12px 16px; display:flex; align-items:center; justify-content:space-between }
+    .nav .brand { font-weight:700 }
+    .nav ul { list-style:none; display:flex; gap:16px; margin:0; padding:0 }
+    main { max-width:var(--maxw); margin:0 auto; padding:24px 16px 56px }
+    h1, h2, h3 { line-height:1.25; margin:0 0 6px }
+    h1 { font-size: clamp(22px, 3.4vw, 32px) }
+    h2 { font-size: clamp(18px, 2.8vw, 24px); margin-top:28px }
+    h3 { font-size: 18px }
+    p { margin:0 0 10px }
+    .muted { color:var(--muted) }
+    .list { padding-left: 18px }
+    .kvs { display:flex; gap:8px; flex-wrap:wrap; font: 600 12px var(--mono); color:var(--muted) }
+    .kvs span { padding:2px 6px; border:1px solid var(--border); border-radius:999px }
+    .two-col { display:grid; gap:12px }
+    @media (min-width: 760px){ .two-col { grid-template-columns: 1fr 1fr } }
+    footer { max-width:var(--maxw); margin:0 auto; padding:24px 16px 48px; color:var(--muted); border-top:1px solid var(--border) }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
+    :focus-visible { outline:2px solid #9bbcff; outline-offset:2px; border-radius:4px }
+      /* Projects */
+    .proj-grid { display:grid; gap:12px }
+    @media (min-width: 760px){ .proj-grid { grid-template-columns: 1fr 1fr } }
+    .proj { border:1px solid var(--border); border-radius: var(--radius); padding:12px }
+    .proj h3 { margin-bottom:4px }
+    .proj p { margin:0 0 8px }
+    .tags { display:flex; gap:6px; flex-wrap:wrap; font:600 12px var(--mono); color:var(--muted) }
+    .tags span { padding:2px 6px; border:1px solid var(--border); border-radius:999px }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">Andrew Zhang</div>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="./AndrewZhang_Resume.pdf">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="about">
+      <h1>Software Engineer</h1>
+      <p class="muted">Mobile • AI/ML • Full‑stack</p>
+      <p>I'm currently a senior studying Computer Science at the University of Maryland, College Park. I'm intending on enrolling in Georgia 
+        Institute of Technology's OMSCS program, finishing in 2027. I'm currently open to both Intern/New Grad roles in Software Engineering.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p class="muted">Previously, I've interned at USAA as a software engineering intern working on their 
+        Mobile App which servers over 14 Million members as well as their SafePilot technology, which leverages telematics data to track driving behavior and detect accidents in real time.
+        Before that, I built websites and taught kids Computer Science at CCACC Academy, an afterschool program for over 2,000 families.
+    </p>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies</h2>
+      <p class="muted">Most of my day to day work consists of Python and Kotlin.</p>
+      <p class="muted">I'm comfortable working with Java/C/C++/Swift/Go/SQL/HTML/CSS/Javascript/OCaml</p>
+      <p class="muted">I have exposure working within frameworks and libraries like Jetpack Compose/SwiftUI/AWS/Docker/Terraform/Node.JS/Django/Flask/MongoDB</p>
+    </section>
+
+    <section id="coursework">
+      <h2>Coursework</h2>
+      <ul class="list">
+        <li>Data Structures & Algorithms</li>
+        <li>Machine Learning / Data Science</li>
+        <li>Mobile App Development (Android/iOS)</li>
+        <li>Compilers</li>
+        <li>Operating Systems</li>
+        <li>Parallel & Distributed Computing</li>
+        <li>Statistics / Probability for CS</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="proj-grid">
+        <article class="proj">
+          <h3><a href="https://github.com/andrewz4184/calorie-tracker" target="_blank" rel="noreferrer noopener">Calorie Tracker</a></h3>
+          <p>Minimal mobile tracker for daily calories/macros with local persistence and fast input.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>Javascript</span><span>Django</span>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3><a href="https://github.com/andrewz4184/stock-app" target="_blank" rel="noreferrer noopener">Stock App</a></h3>
+          <p>Lightweight dashboard for watchlists and sector rotation with basic fundamentals.</p>
+          <div class="tags">
+            <span>Node</span><span>Express</span><span>MongoDB</span><span>Frontend</span>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3><a href="https://github.com/andrewz4184/restock-notifier" target="_blank" rel="noreferrer noopener">Restock Notifier</a></h3>
+          <p>Monitors product pages and sends alerts on restocks (matcha/tea drops ☕).</p>
+          <div class="tags">
+            <span>Go</span><span>AWS Lambda</span><span>EventBridge</span><span>Twilio/Telegram</span>
+          </div>
+        </article>
+
+        <article class="proj">
+          <h3><a href="https://github.com/andrewz4184/fda-rag-chatbot" target="_blank" rel="noreferrer noopener">RAG Chatbot</a></h3>
+          <p>Retrieval‑augmented assistant over domain PDFs with citations and brief export.</p>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>OpenAI</span><span>Pinecone</span>
+          </div>
+        </article>
+        
+        <article class="proj">
+          <h3><a href="https://github.com/andrewz4184/aram-stat-analyzer" target="_blank" rel="noreferrer noopener">ARAM Stat Analyzer</a></h3>
+          <p>Fetches match data and surfaces champion/build win‑rates and personal performance trends.</p>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>Requests</span><span>Charts</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:azhang04@terpmail.umd.edu">azhang04@terpmail.umd.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/andrewz4184" target="_blank" rel="noreferrer noopener">/in/andrewz4184</a></p>
+      <p>GitHub: <a href="https://github.com/andrewz4184" target="_blank" rel="noreferrer noopener">@andrewz4184</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Andrew Zhang</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
